@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume - Jamal El-Shenawy | Data Engineer">
+    <title>Resume | Jamal El-Shenawy</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Matrix Background Animation -->
+    <canvas id="matrix-bg" class="matrix-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="terminal-prompt">~/jamal</span>
+                <span class="cursor-blink">_</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="resume.html" class="nav-link active">Resume</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="page-label">$ cat resume.pdf</span>
+                <h1 class="page-title">Resume</h1>
+                <p class="page-description">Download or view my professional resume</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="resume-download-section">
+        <div class="container">
+            <div class="download-card">
+                <button onclick="downloadResume()" class="btn-download">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download Resume (PDF)
+                </button>
+                <p class="download-note">Last updated: March 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Content -->
+    <section class="resume-content">
+        <div class="container">
+            <div class="resume-paper">
+                <!-- Header -->
+                <div class="resume-header">
+                    <h1 class="resume-name">Jamal El-Shenawy</h1>
+                    <div class="resume-title">Data Engineer</div>
+                    <div class="resume-contact-info">
+                        <span>Giza, Egypt</span>
+                        <span>•</span>
+                        <a href="mailto:jamalcsit05@gmail.com">jamalcsit05@gmail.com</a>
+                        <span>•</span>
+                        <a href="https://github.com/jamal005csit" target="_blank">GitHub</a>
+                        <span>•</span>
+                        <a href="https://www.linkedin.com/in/jamal-el-shenawy" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="resume-section">
+                    <h2 class="resume-section-title">Professional Summary</h2>
+                    <p class="resume-text">
+                        Data Engineer with 2+ years of experience designing and implementing scalable ETL pipelines, 
+                        data workflows, and analytics solutions. Proficient in Python, SQL, and modern data engineering 
+                        tools. Strong background in machine learning, web development, and data analysis. Proven track 
+                        record of building robust data infrastructure and delivering data-driven solutions.
+                    </p>
+                </div>
+
+                <!-- Skills -->
+                <div class="resume-section">
+                    <h2 class="resume-section-title">Technical Skills</h2>
+                    <div class="resume-skills-grid">
+                        <div class="resume-skill-category">
+                            <h3>Programming</h3>
+                            <p>Python, JavaScript, SQL, HTML/CSS</p>
+                        </div>
+                        <div class="resume-skill-category">
+                            <h3>Data Engineering</h3>
+                            <p>Apache Airflow, Apache Spark, ETL Pipelines, Data Warehousing</p>
+                        </div>
+                        <div class="resume-skill-category">
+                            <h3>Databases</h3>
+                            <p>PostgreSQL, MySQL, MongoDB, SQLite</p>
+                        </div>
+                        <div class="resume-skill-category">
+                            <h3>Data Science & ML</h3>
+                            <p>Pandas, NumPy, Scikit-learn, TensorFlow, Keras</p>
+                        </div>
+                        <div class="resume-skill-category">
+                            <h3>Web Scraping</h3>
+                            <p>BeautifulSoup, Scrapy, Selenium, Playwright</p>
+                        </div>
+                        <div class="resume-skill-category">
+                            <h3>Web Development</h3>
+                            <p>React, Node.js, Django, Flask, FastAPI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="resume-section">
+                    <h2 class="resume-section-title">Education</h2>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <div>
+                                <h3 class="resume-item-title">Bachelor of Science in Computer Science and IT</h3>
+                                <p class="resume-item-subtitle">Egypt Japan University of Science and Technology (E-JUST)</p>
+                            </div>
+                            <div class="resume-item-date">Alexandria, Egypt</div>
+                        </div>
+                        <ul class="resume-list">
+                            <li>Active in AI/ML research and full-stack development projects</li>
+                            <li>3rd place in robotics competition</li>
+                            <li>Engaged in academic societies focused on AI, data science, and competitive technology projects</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="resume-section">
+                    <h2 class="resume-section-title">Professional Experience</h2>
+                    
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <div>
+                                <h3 class="resume-item-title">Data Engineer</h3>
+                                <p class="resume-item-subtitle">Freelance</p>
+                            </div>
+                            <div class="resume-item-date">2023 - Present</div>
+                        </div>
+                        <ul class="resume-list">
+                            <li>Design and implement ETL pipelines for data extraction, transformation, and loading</li>
+                            <li>Develop web scraping solutions to collect and structure data from various sources</li>
+                            <li>Build API integrations for seamless data flow between systems</li>
+                            <li>Optimize data workflows for improved performance and reliability</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <div>
+                                <h3 class="resume-item-title">Full-Stack Developer</h3>
+                                <p class="resume-item-subtitle">Various Projects</p>
+                            </div>
+                            <div class="resume-item-date">2022 - Present</div>
+                        </div>
+                        <ul class="resume-list">
+                            <li>Developed responsive web applications using modern JavaScript frameworks</li>
+                            <li>Implemented backend services with Python (Django/Flask) and Node.js</li>
+                            <li>Designed and optimized database schemas for efficient data storage</li>
+                            <li>Ensured code quality through testing and version control best practices</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="resume-section">
+                    <h2 class="resume-section-title">Key Projects</h2>
+                    
+                    <div class="resume-item">
+                        <h3 class="resume-item-title">CineVerse - Netflix-Style Streaming Platform</h3>
+                        <p class="resume-project-tech">HTML, CSS, JavaScript</p>
+                        <ul class="resume-list">
+                            <li>Built responsive streaming platform with dynamic content loading</li>
+                            <li>Implemented intuitive UI/UX with smooth animations</li>
+                            <li>Optimized performance through efficient DOM manipulation</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <h3 class="resume-item-title">Credit Scoring Machine Learning Model</h3>
+                        <p class="resume-project-tech">Python, Pandas, Scikit-learn</p>
+                        <ul class="resume-list">
+                            <li>Developed ML model for credit risk assessment</li>
+                            <li>Performed feature engineering and model evaluation</li>
+                            <li>Achieved high accuracy through cross-validation techniques</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <h3 class="resume-item-title">MNIST Handwritten Character Recognition</h3>
+                        <p class="resume-project-tech">Python, TensorFlow, Keras</p>
+                        <ul class="resume-list">
+                            <li>Implemented neural network for digit classification</li>
+                            <li>Applied data preprocessing and augmentation techniques</li>
+                            <li>Optimized model performance through hyperparameter tuning</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="resume-section">
+                    <h2 class="resume-section-title">Languages</h2>
+                    <div class="resume-languages">
+                        <span class="resume-language">Arabic (Native)</span>
+                        <span class="resume-language">English (Advanced)</span>
+                        <span class="resume-language">German (Basic)</span>
+                        <span class="resume-language">Japanese (Beginner)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Jamal El-Shenawy. All rights reserved.</p>
+                    <p class="footer-note">$ exit 0</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/jamal005csit" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/jamal-el-shenawy" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+                    <a href="mailto:jamalcsit05@gmail.com" class="footer-link">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Resume download function
+        function downloadResume() {
+            // Generate resume content
+            window.print();
+            
+            // Alternative: If you have a PDF file, use this:
+            // const link = document.createElement('a');
+            // link.href = 'path/to/resume.pdf';
+            // link.download = 'Jamal_El-Shenawy_Resume.pdf';
+            // link.click();
+        }
+    </script>
+</body>
+</html>
