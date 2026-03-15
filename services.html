@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services by Jamal El-Shenawy - ETL Pipelines, Web Scraping, API Integration, Web Development">
+    <title>Services | Jamal El-Shenawy</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Matrix Background Animation -->
+    <canvas id="matrix-bg" class="matrix-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="terminal-prompt">~/jamal</span>
+                <span class="cursor-blink">_</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="page-label">$ cat services.json</span>
+                <h1 class="page-title">Services</h1>
+                <p class="page-description">Data engineering solutions and development services tailored to your needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid-main">
+                <!-- Service 1: ETL Pipelines -->
+                <div class="service-card-main">
+                    <div class="service-icon-large">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h2 class="service-title-main">ETL Pipelines</h2>
+                    <p class="service-description-main">
+                        Design and implementation of robust Extract, Transform, Load pipelines that efficiently 
+                        process and move data between systems. I build scalable data workflows that ensure data 
+                        quality, reliability, and optimal performance.
+                    </p>
+                    
+                    <div class="service-features-main">
+                        <h4>What I Deliver</h4>
+                        <ul>
+                            <li>Custom ETL architecture design</li>
+                            <li>Data extraction from multiple sources (databases, APIs, files)</li>
+                            <li>Complex data transformation and cleaning</li>
+                            <li>Efficient data loading to warehouses and databases</li>
+                            <li>Automated scheduling and monitoring</li>
+                            <li>Error handling and data validation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-tech-main">
+                        <h4>Technologies</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Apache Airflow</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Apache Spark</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Web Scraping -->
+                <div class="service-card-main">
+                    <div class="service-icon-large">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h2 class="service-title-main">Web Scraping</h2>
+                    <p class="service-description-main">
+                        Automated data extraction from websites with precision and efficiency. I develop intelligent 
+                        scraping solutions that handle dynamic content, pagination, and anti-scraping measures while 
+                        respecting website policies and rate limits.
+                    </p>
+                    
+                    <div class="service-features-main">
+                        <h4>What I Deliver</h4>
+                        <ul>
+                            <li>Custom web scraping scripts</li>
+                            <li>Dynamic content extraction (JavaScript-heavy sites)</li>
+                            <li>Automated data collection workflows</li>
+                            <li>Data cleaning and structuring</li>
+                            <li>Scheduled scraping jobs</li>
+                            <li>Proxy rotation and rate limiting</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-tech-main">
+                        <h4>Technologies</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">BeautifulSoup</span>
+                            <span class="tech-tag">Scrapy</span>
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">Playwright</span>
+                            <span class="tech-tag">Requests</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: API Scraping -->
+                <div class="service-card-main">
+                    <div class="service-icon-large">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h2 class="service-title-main">API Scraping & Integration</h2>
+                    <p class="service-description-main">
+                        Professional API integration and data extraction services. I work with RESTful APIs, GraphQL, 
+                        and various web services to retrieve, process, and integrate data into your systems efficiently 
+                        and reliably.
+                    </p>
+                    
+                    <div class="service-features-main">
+                        <h4>What I Deliver</h4>
+                        <ul>
+                            <li>RESTful API integration</li>
+                            <li>GraphQL API consumption</li>
+                            <li>API authentication handling (OAuth, JWT, API Keys)</li>
+                            <li>Rate limiting and pagination management</li>
+                            <li>Data transformation and normalization</li>
+                            <li>Error handling and retry logic</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-tech-main">
+                        <h4>Technologies</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Requests</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Postman</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">REST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: Web Development -->
+                <div class="service-card-main">
+                    <div class="service-icon-large">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h2 class="service-title-main">Web Development</h2>
+                    <p class="service-description-main">
+                        Full-stack web application development with modern technologies and best practices. I create 
+                        responsive, performant, and user-friendly web applications that meet your business requirements 
+                        and provide excellent user experiences.
+                    </p>
+                    
+                    <div class="service-features-main">
+                        <h4>What I Deliver</h4>
+                        <ul>
+                            <li>Responsive frontend development</li>
+                            <li>Backend API development</li>
+                            <li>Database design and optimization</li>
+                            <li>User authentication and authorization</li>
+                            <li>Performance optimization</li>
+                            <li>Deployment and hosting setup</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-tech-main">
+                        <h4>Technologies</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Python/Flask</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-heading-center">My Process</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-number">01</div>
+                    <h3>Discovery</h3>
+                    <p>Understanding your requirements, goals, and technical constraints</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">02</div>
+                    <h3>Planning</h3>
+                    <p>Designing the architecture and selecting the right technologies</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">03</div>
+                    <h3>Development</h3>
+                    <p>Building the solution with clean code and best practices</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">04</div>
+                    <h3>Testing</h3>
+                    <p>Rigorous testing to ensure reliability and performance</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">05</div>
+                    <h3>Deployment</h3>
+                    <p>Smooth deployment with documentation and support</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">06</div>
+                    <h3>Maintenance</h3>
+                    <p>Ongoing support and optimization as needed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="services-cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Ready to start your project?</h2>
+                <p>Let's discuss how I can help you achieve your data engineering and development goals.</p>
+                <div class="cta-buttons">
+                    <a href="mailto:jamalcsit05@gmail.com" class="btn-primary-apple">Contact Me</a>
+                    <a href="projects.html" class="btn-secondary-apple">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Jamal El-Shenawy. All rights reserved.</p>
+                    <p class="footer-note">$ exit 0</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/jamal005csit" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/jamal-el-shenawy" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+                    <a href="mailto:jamalcsit05@gmail.com" class="footer-link">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

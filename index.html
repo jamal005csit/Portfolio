@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jamal El-Shenawy - Data Engineer specializing in ETL pipelines, web scraping, and data solutions">
+    <meta name="keywords" content="Data Engineer, ETL, Web Scraping, Python, Machine Learning, Jamal El-Shenawy">
+    <title>Jamal El-Shenawy | Data Engineer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Matrix Background Animation -->
+    <canvas id="matrix-bg" class="matrix-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="terminal-prompt">~/jamal</span>
+                <span class="cursor-blink">_</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-home">
+        <div class="hero-content-wrapper">
+            <div class="hero-text-home">
+                <div class="hero-label">$ whoami</div>
+                <h1 class="hero-title-main">
+                    <span class="name-text">Jamal El-Shenawy</span>
+                </h1>
+                <h2 class="hero-subtitle-main">Data Engineer</h2>
+                <p class="hero-description-main">
+                    Building robust data pipelines and scalable solutions.<br>
+                    Transforming raw data into actionable insights with precision and efficiency.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Commitment</div>
+                    </div>
+                </div>
+                <div class="hero-cta-home">
+                    <a href="projects.html" class="btn-primary-apple">
+                        <span>View Projects</span>
+                        <svg class="btn-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="about.html" class="btn-secondary-apple">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual-home">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="term-btn close"></span>
+                            <span class="term-btn minimize"></span>
+                            <span class="term-btn maximize"></span>
+                        </div>
+                        <div class="terminal-title">data_pipeline.py</div>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code><span class="code-comment"># ETL Pipeline Architecture</span>
+<span class="code-keyword">import</span> <span class="code-module">pandas</span> <span class="code-keyword">as</span> pd
+<span class="code-keyword">import</span> <span class="code-module">apache_spark</span>
+<span class="code-keyword">from</span> <span class="code-module">airflow</span> <span class="code-keyword">import</span> DAG
+
+<span class="code-keyword">class</span> <span class="code-class">DataPipeline</span>:
+    <span class="code-keyword">def</span> <span class="code-function">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.source = <span class="code-string">"raw_data"</span>
+        <span class="code-param">self</span>.destination = <span class="code-string">"warehouse"</span>
+    
+    <span class="code-keyword">def</span> <span class="code-function">extract</span>(<span class="code-param">self</span>):
+        <span class="code-comment"># Extract from multiple sources</span>
+        <span class="code-keyword">return</span> <span class="code-module">pd</span>.read_sql(query, conn)
+    
+    <span class="code-keyword">def</span> <span class="code-function">transform</span>(<span class="code-param">self</span>, data):
+        <span class="code-comment"># Clean and transform data</span>
+        <span class="code-keyword">return</span> data.pipe(clean).pipe(validate)
+    
+    <span class="code-keyword">def</span> <span class="code-function">load</span>(<span class="code-param">self</span>, data):
+        <span class="code-comment"># Load to data warehouse</span>
+        data.to_sql(<span class="code-string">'analytics'</span>, engine)</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Quick Intro Section -->
+    <section class="quick-intro">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-card">
+                    <div class="intro-icon">⚡</div>
+                    <h3>Data Engineering</h3>
+                    <p>Designing and building scalable ETL pipelines that process millions of records efficiently.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="intro-icon">🔧</div>
+                    <h3>Web Scraping</h3>
+                    <p>Extracting valuable data from web sources with precision and automation.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="intro-icon">🤖</div>
+                    <h3>Machine Learning</h3>
+                    <p>Implementing ML models for data analysis and predictive insights.</p>
+                </div>
+                <div class="intro-card">
+                    <div class="intro-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Building full-stack applications with modern technologies and best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-text">
+                    <h2>Based in Giza, Egypt</h2>
+                    <p>Available for remote opportunities worldwide and on-site collaboration in the MENA region.</p>
+                    <a href="about.html" class="btn-link">
+                        Get to know me →
+                    </a>
+                </div>
+                <div class="location-visual">
+                    <div class="map-placeholder">
+                        <div class="map-marker">
+                            <div class="marker-pulse"></div>
+                            <div class="marker-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Jamal El-Shenawy. All rights reserved.</p>
+                    <p class="footer-note">$ exit 0</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/jamal005csit" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/jamal-el-shenawy" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+                    <a href="mailto:jamalcsit05@gmail.com" class="footer-link">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
